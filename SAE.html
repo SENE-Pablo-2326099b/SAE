@@ -1,51 +1,108 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="apple-touch-icon" sizes="120x120" href="/home/dodge/but/HTML/SAE/assets/favicon/apple-touch-icon.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="/home/dodge/but/HTML/SAE/assets/favicon/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="/home/dodge/but/HTML/SAE/assets/favicon/favicon-16x16.png">
-      <link rel="favicon" href="/home/dodge/but/HTML/SAE/assets/favicon/favicon.ico">
-      <link rel="manifest" href="/home/dodge/but/HTML/SAE/assets/favicon/site.webmanifest">
-      <link rel="mask-icon" href="/home/dodge/but/HTML/SAE/assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
-      <meta name="msapplication-TileColor" content="#603cba">
-      <meta name="theme-color" content="#ffffff">
-      <link rel="stylesheet" href="style.css">
-      <title>Vanityddd</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/home/dodge/but/HTML/SAE/assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/home/dodge/but/HTML/SAE/assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/home/dodge/but/HTML/SAE/assets/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="favicon"
+      href="/home/dodge/but/HTML/SAE/assets/favicon/favicon.ico"
+    />
+    <link
+      rel="manifest"
+      href="/home/dodge/but/HTML/SAE/assets/favicon/site.webmanifest"
+    />
+    <link
+      rel="mask-icon"
+      href="/home/dodge/but/HTML/SAE/assets/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#603cba" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Vanityddd</title>
   </head>
   <body>
-      <header>
-          <h1>VANITY</h1>
-      </header>
-       <main>
-          <!-- navbar -->
-           <nav class="navbar">
-             <a href="#">Nouvelles fonctionnalités</a>
-             <a href="#">Démarrer la construction</a>
-             <a href="#">Demander une démo</a>
-           </nav>
-       </main>
-      <div class = "container"> 
-          <div class="item item-1"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus maxime error quia repellendus odio nesciunt, assumenda eius ab voluptatibus in! </p></div>
+    <header>
+      <h1>VANITY</h1>
+    </header>
+    <main>
+      <!-- navbar -->
+      <nav class="navbar">
+        <a href="#">Nouvelles fonctionnalités</a>
+        <a href="#">Démarrer la construction</a>
+        <a href="#">Demander une démo</a>
+      </nav>
+    </main>
+    <div class="container">
+      <div class="item item-1">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus
+          maxime error quia repellendus odio nesciunt, assumenda eius ab
+          voluptatibus in!
+        </p>
       </div>
-      <br><br>
-      <footer>
-       <div class="container">
-           <div class="contact">
-               <form action="/ma-page-de-traitement" method="post">
-                  <label for="name">Nom&nbsp;:</label>
-                  <input type="text" id="name" name="user_name" required><br><br>
-                  <label for="mail">E-mail&nbsp;:</label>
-                  <input type="email" id="mail" name="user_email" required><br><br>
-                  <label for="msg">Message&nbsp;:</label>
-                  <textarea id="msg" name="user_message" required></textarea><br><br>
-                  <div class="button">
-                      <button type="submit">Envoyer votre message</button><br><br>
-                  </div>
-               </form>
-           </div>
-       </div>
-      </footer>
-   </body>
+    </div>
+    <br /><br />
+    <footer>
+      <div class="container">
+        <div class="contact">
+          <form action="/ma-page-de-traitement" method="post">
+            <label for="surname">Nom *&nbsp;:</label>
+            <input
+              type="text"
+              id="surname"
+              name="user_surname"
+              required
+            /><br /><br />
+            <label for="name">Prenom&nbsp;:</label>
+            <input
+              type="text"
+              id="name"
+              name="user_name"
+              required
+            /><br /><br />
+            <label for="sexehomme">Homme</label>
+            <input type="radio" id="sexehomme" name="sexe" value='homme' >
+            <label for="sexefemme">Femme</label>
+            <input type="radio" id="sexefemme" name="sexe" value='femme'>
+            <br /><br />
+            <label for="mail">E-mail *&nbsp;:</label>
+            <input
+              type="email"
+              id="mail"
+              name="user_email"
+              required
+            /><br /><br />
+            <label for="msg">Message *&nbsp;:</label>
+            <textarea name="avis" rows="5" cols="50">Donnez vos avis sur le site</textarea>
+            <br /><br />
+            <div class="button">
+              <button type="submit">Envoyer votre message</button><br /><br />
+              <p>
+                lorsqu'une * est présente, la réponse est obligatoire
+              </p>
+            <br /><br />
+            </div>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
