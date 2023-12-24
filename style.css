@@ -52,6 +52,8 @@
     color: white;
   }
 
+/* Formulaire de contact bas de page */
+
   .contact {
     height: 250px;
     width: 500px;
@@ -117,7 +119,6 @@
     display: flex;
     justify-content: center;
   }
-
   
   .wrapper{
     position: relative;
@@ -197,5 +198,6 @@
   
   button.is_active span{
     opacity: 0;
-    visibility: hidden;
-  }
+    visibility: hidden;  }
+
+/* Fin du formulaire : */
