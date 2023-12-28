@@ -1,203 +1,231 @@
-/*Fonts et police d'écriture */
-
-*{
+* {
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style: none;
+}
 
-
-
+/* Fonts et police d'écriture */
+@font-face {
+  font-family: "Geist";
+  src: url(/SAE/assets/Fonts/Geist/Geist/Geist-Black.otf) format('woff2');
 }
 
 @font-face {
-    font-family: "Geist";
-    src: url(/SAE/assets/Fonts/Geist/Geist/Geist-Black.otf) format('woff2');
-  }
-  
-  @font-face {
-    font-family: "Geist-mono";
-    src: url(/SAE/assets/Fonts/Geist.Mono/Geist.Mono/GeistMono-Black.otf) format('woff2');
-  }
-  
-  
-  body {
-  
-    font-family: 'Geist-mono', sans-serif;
-    background-color: rgb(0, 0, 0);
-    color: white;
-  }
-  
-  header{
+  font-family: "Geist-mono";
+  src: url(/SAE/assets/Fonts/Geist.Mono/Geist.Mono/GeistMono-Black.otf) format('woff2');
+}
 
-    height: 10vh;
-    width: 100vw;
-  }
+body {
+  font-family: 'Geist-mono', sans-serif;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  height: 1500px;
+}
+
+header {
+  height: 10vh;
+  width: 100vw;
+  font-size: 10ox;
+}
+
+.navbar {
+  position: absolute;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.navbar a {
+  color: white;
+}
 
 
-  .navbar {
+.navbar .logo {
+  font-size: 2em;
+  font-weight: bold;
+}
 
-    text-align: center;
-    color: #7900A8;
+.navbar .nav-links ul {
+  display: flex;
+}
 
-  }
-  title {
-    text-transform: uppercase;
-  }
+.navbar .nav-links ul li {
+  margin: 0 20px;
+}
 
+.navbar .menu-hamburger {
+
+  display: none;
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  width: 35px;
   
-  h1 {
-    font-size: 4vw;
-    text-align: center;
-    color: white;
-  }
+}
 
 /* Formulaire de contact bas de page */
 
+@media screen and (max-width: 900px) {
+  
   .contact {
-    height: 250px;
-    width: 500px;
+    display: flex;
   }
+
+  .navbar {
+    top: 0%;
+    left: 0%;
+    padding: 0%;
+  }
+
+
+  .navbar .menu-hamburger {
+    display: block;
+  }
+
   
-  .container {
-    display: flex;
-    flex-direction: center;
-    color: white;
-  }
-
-  .Ftitre{
-    display: flex;
-    justify-content: center;
-    color: white;
-  }
-
-  .Fhomme-femme {
-    display: flex;
-    justify-content: center;
-
-  }
-
-  .Fnom-prenom {
+  .nav-links {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
-  }
-
-  .Fnom-prenom input {
-    
-    height: 10px;
-    width: 100px;
-
-
-  }
-
-  .nom,
-  .prenom {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    }
-
-  .radio {
-    display: inline-block;
-    margin-right: 20px;
-    height: 50px;
-   }
-   
-   .radio input {
-    margin-right: 5px;
-  }
-
-  .Fmessage {
-
-    display: flex;
-    justify-content: center;
-  }
-  .inputmessage {
-
-    display: flex;
-    justify-content: center;
-  }
-  
-  .wrapper{
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-  
-  button{
-    position: relative;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
-    width: 170px;
-    height: 40px;
-    line-height: 1;
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    border: 3px solid #000000;
-    background: #000000;
-    color: #7900A8;
-    border-radius: 40px;
-    cursor: pointer;
-    overflow: hidden;
-    transition: all .35s;
-  }
-  
-  button:hover{
-    background: #000000;
-    color: #7900A8;
-  }
-  
-  button span{
-    opacity: 1;
-    visibility: visible;
-    transition: all .35s;
-  }
-  
-  .success{
+    top: 0%;
+    left: 0%;
     position: absolute;
-    top: 0;
-    left: 0;
+    background-color: #000000;
     width: 100%;
-    height: 100%;
-    background: #fff;
-    border-radius: 50%;
-    z-index: 1;
-    opacity: 0;
-    visibility: hidden;
-    transition: all .35s;
+    height: 100vh;
   }
-  
-  .success svg{
-    width: 20px;
-    height: 20px;
-    fill: #7900A8;
-    transform-origin: 50% 50%;
-    transform: translateY(-50%) rotate(0deg) scale(0);
-    transition: all .35s;
-  }
-  
-  button.is_active{
-    width: 40px;
-    height: 40px;
-  }
-  
-  button.is_active .success{
-    opacity: 1;
-    visibility: visible;
-  }
-  
-  button.is_active .success svg{
-    margin-top: 50%;
-    transform: translateY(-50%) rotate(720deg) scale(1);
-  }
-  
-  button.is_active span{
-    opacity: 0;
-    visibility: hidden;  }
 
-/* Fin du formulaire : */
+  .nav-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  
+  }
+
+  .navbar .nav-links ul li {
+    margin: 20px 0;
+    font-size: 1.2em;
+  }
+
+  .navbar .logo {
+    position: absolute;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+}
+
+
+h1 {
+  font-size: 4vw;
+  text-align: center;
+  color: white;
+}
+
+
+/* Formulaire de contact bas de page */
+.contact {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+  position: fixed; 
+  background-color: #1a1a1a;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.container {
+  position: relative;
+  margin-top: 1px;
+  color: white;
+}
+
+.Ftitre {
+  text-align: center;
+  color: white;
+}
+
+.Fhomme-femme,
+.Fnom-prenom,
+.Fmessage,
+.inputmessage,
+.wrapper {
+  text-align: center;
+}
+
+.Fnom-prenom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.Fnom-prenom input {
+  height: 30px;
+  width: 45%;
+}
+
+.radio {
+  display: inline-block;
+  margin-right: 20px;
+  height: 50px;
+}
+
+.radio input {
+  margin-right: 5px;
+}
+
+.Fmessage,
+.inputmessage,
+.wrapper {
+  margin-top: 20px;
+}
+
+button {
+  width: 170px;
+  height: 40px;
+  line-height: 1;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: 3px solid #7900A8;
+  background: #000000;
+  color: #ffffff;
+  border-radius: 40px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all .35s;
+}
+
+button:hover {
+  background: #000000;
+  color: #7900A8;
+}
+
+button span {
+  opacity: 1;
+  visibility: visible;
+  transition: all .35s;
+}
+
+button.is_active {
+  width: 40px;
+  height: 40px;
+}
+
+button.is_active {
+  opacity: 1;
+  visibility: visible;
+}
+
+button.is_active span {
+  opacity: 0;
+}
