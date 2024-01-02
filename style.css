@@ -82,6 +82,46 @@ hr {
   width: 35px;
 }
 
+ .centre {
+  border: none;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  box-shadow: none;
+} 
+
+
+.unlock {
+  border: none;
+  box-shadow: none;
+  text-transform: inherit;
+  margin: 2rem;
+  max-width: 24.4rem;
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.2175;
+  color: #ffffff;
+}
+
+.explication {
+  border: none;
+  box-shadow: none;
+  margin-left: 0.1rem;
+  margin-bottom: 1rem;
+  max-width: 30.8rem;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 100;
+  line-height: 1.2175;
+  color: #ffffff;
+}
+
+
+
 /* Formulaire de contact bas de page */
 
 @media screen and (max-width: 900px) {
@@ -201,11 +241,14 @@ textarea  {
   margin-right: 20px;
   height: 50px;
   font-size: 50px;
+  
 }
 
 input[type=radio] {
   margin-right: 5px;
   background-color: #707070;
+  width: 16px;
+  height: 16px;
 }
 
 .Fmessage,
