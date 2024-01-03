@@ -218,9 +218,9 @@ textarea {
 }
 
 .radio label {
- color: #666;
+ color:   White;
  font-weight: normal;
- font-size: 50px; 
+ font-size: 15px; 
 }
 
 .radio label:before {
@@ -229,10 +229,10 @@ textarea {
  position: relative;
  top: 5px;
  margin: 0 5px 0 0;
- width: 20px;
- height: 20px;
+ width: 15px;
+ height: 15px;
  border-radius: 11px;
- border: 2px solid white;
+ border: 2px solid #181818;
  background-color: #240023;
 }
 
@@ -247,6 +247,14 @@ textarea {
  display: block;
  background: #707070;
 }
+
+/* Quand je survol change le background */
+.radio:hover label:before {
+  background-color: #181818;
+}
+
+
+
 
 .Fmessage,
 .inputmessage,
