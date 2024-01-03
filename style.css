@@ -17,8 +17,11 @@
 }
 
 body {
-  font-family: 'Geist-mono', sans-serif;
-  background-color: rgb(0, 0, 0);
+  font-family: 'Geist', sans-serif;
+  /* background-color: rgb(0, 0, 0); */
+  background-image: url("assets/Background/degrader.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   display: flex;
   flex-direction: column;
@@ -129,7 +132,11 @@ footer {
 }
 
 .Bstart, .Bask {
-  margin: 70px;
+  height: 40px;
+  width: 200px;
+  background: transparent;
+  border: 1px solid #181818;
+
 }
 
 h1 {
@@ -154,7 +161,7 @@ hr {
   position: static;
   bottom: 0;
   left: 0;
-  background-color: #000000;
+  /* background-color: #000000; */
   color: white;
   width: 100%;
 }
@@ -189,28 +196,56 @@ h2 {
 }
 
 input[type=text],
-textarea  {
-  border: 2px solid #7900A8;
-  border-radius: 14px;
-  color: #ffffff;
-  background-color: black;
-  padding: 10px;
-  resize: none;
+textarea {
+ border: 2px solid #181818;
+ border-radius: 14px;
+ color: #ffffff;
+ background-color: transparent;
+ padding: 10px;
+ resize: none;
 }
+
 
 .radio {
-  display: inline-block;
-  margin-right: 20px;
-  height: 50px;
-  font-size: 50px;
-  
+ display: inline-block;
+ position: relative;
+ padding: 0 6px;
+ margin: 10px 0 0;
 }
 
-input[type=radio] {
-  margin-right: 5px;
-  background-color: #707070;
-  width: 16px;
-  height: 16px;
+.radio input[type='radio'] {
+ display: none;
+}
+
+.radio label {
+ color: #666;
+ font-weight: normal;
+ font-size: 50px; 
+}
+
+.radio label:before {
+ content: " ";
+ display: inline-block;
+ position: relative;
+ top: 5px;
+ margin: 0 5px 0 0;
+ width: 20px;
+ height: 20px;
+ border-radius: 11px;
+ border: 2px solid white;
+ background-color: #240023;
+}
+
+.radio input[type=radio]:checked + label:after {
+ border-radius: 11px;
+ width: 12px;
+ height: 12px;
+ position: absolute;
+ top: 9px;
+ left: 10px;
+ content: " ";
+ display: block;
+ background: #707070;
 }
 
 .Fmessage,
@@ -234,8 +269,8 @@ button {
   font-size: 12px;
   font-weight: bold;
   letter-spacing: 1px;
-  border: 3px solid #7900A8;
-  background: #000000;
+  border: 1px solid #181818;
+  background: transparent;
   color: #ffffff;
   border-radius: 40px;
   cursor: pointer;
@@ -245,7 +280,7 @@ button {
 }
 
 button:hover {
-  background: #000000;
+  background: transparent;
   color: #7900A8;
 }
 
@@ -298,7 +333,7 @@ button.is_active span {
     top: 0%;
     left: 0%;
     position: absolute;
-    background-color: #000000;
+    background: linear-gradient(#7900a8,20%,#000000);
     width: 100%;
     height: 100vh;
     margin-left: -100%;
