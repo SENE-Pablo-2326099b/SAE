@@ -39,14 +39,6 @@ footer {
   margin-top: auto;
 }
 
-.separateur {
-  height: 20px;
-}
-
-hr {
-  margin: -15px;
-}
-
 .navbar {
   padding: 30px;
   display: flex;
@@ -82,6 +74,11 @@ hr {
   width: 35px;
 }
 
+.separateur {
+  height: 20px;
+}
+
+
  .centre {
   border: none;
   box-shadow: none;
@@ -107,6 +104,7 @@ hr {
   color: #ffffff;
 }
 
+
 .explication {
   border: none;
   box-shadow: none;
@@ -115,14 +113,164 @@ hr {
   max-width: 30.8rem;
   text-align: center;
   font-size: 1.6rem;
-  font-weight: 100;
+  font-weight: lighter;
   line-height: 1.2175;
   color: #ffffff;
 }
 
+.btn1 {
+    height: 4rem;
+    left: 5rem;
+    top: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
 
+.Bstart, .Bask {
+  margin: 70px;
+}
+
+h1 {
+  font-size: 2.2rem;
+  text-align: center;
+  color: white;
+  margin: 10px;
+}
+
+ 
+hr {
+  background-color: #262626;
+}
+
+.contenu{
+  margin: 10px;
+}
 
 /* Formulaire de contact bas de page */
+
+.contact {
+  position: static;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  color: white;
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  margin: 11px;
+}
+
+.Fhomme-femme,
+.Fnom-prenom,
+.Fmessage,
+.inputmessage,
+.btn2 {
+  text-align: center;
+}
+
+.Fnom-prenom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.Fnom-prenom input {
+  /* height: 40px; */
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+input[type=text],
+textarea  {
+  border: 2px solid #7900A8;
+  border-radius: 14px;
+  color: #ffffff;
+  background-color: black;
+  padding: 10px;
+  resize: none;
+}
+
+.radio {
+  display: inline-block;
+  margin-right: 20px;
+  height: 50px;
+  font-size: 50px;
+  
+}
+
+input[type=radio] {
+  margin-right: 5px;
+  background-color: #707070;
+  width: 16px;
+  height: 16px;
+}
+
+.Fmessage,
+.inputmessage,
+.btn2 {
+  margin-top: 20px;
+}
+
+.dv {
+  width: 200px;
+  height: 100px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+button {
+  width: 100px;
+  height: 20px;
+  line-height: 1;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: 3px solid #7900A8;
+  background: #000000;
+  color: #ffffff;
+  border-radius: 40px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all .35s;
+  margin: 20px;
+}
+
+button:hover {
+  background: #000000;
+  color: #7900A8;
+}
+
+button span {
+  opacity: 1;
+  visibility: visible;
+  transition: all .35s;
+}
+
+button.is_active {
+  width: 40px;
+  height: 40px;
+}
+
+button.is_active {
+  opacity: 1;
+  visibility: visible;
+}
+
+button.is_active span {
+  opacity: 0;
+}
+
+
+/* Medias quieries */
 
 @media screen and (max-width: 900px) {
 
@@ -179,129 +327,9 @@ hr {
     font-size: 2em;
     font-weight: bold;
   }
-}
 
-h1 {
-  font-size: 4vw;
-  text-align: center;
-  color: white;
-}
-
-/* Formulaire de contact bas de page */
-.contact {
-  position: static;
-  bottom: 0;
-  left: 0;
-  background-color: #000000;
-  color: white;
-  width: 100%;
-}
-
-h2 {
-  text-align: center;
-  color: white;
-  font-size: 15px;
-  margin: 11px;
-}
-
-.Fhomme-femme,
-.Fnom-prenom,
-.Fmessage,
-.inputmessage,
-.wrapper {
-  text-align: center;
-}
-
-.Fnom-prenom {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.Fnom-prenom input {
-  /* height: 40px; */
-  width: 50%;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-input[type=text],
-textarea  {
-  border: 2px solid #7900A8;
-  border-radius: 14px;
-  color: #ffffff;
-  background-color: black;
-  padding: 10px;
-  resize: none;
-}
-
-.radio {
-  display: inline-block;
-  margin-right: 20px;
-  height: 50px;
-  font-size: 50px;
-  
-}
-
-input[type=radio] {
-  margin-right: 5px;
-  background-color: #707070;
-  width: 16px;
-  height: 16px;
-}
-
-.Fmessage,
-.inputmessage,
-.wrapper {
-  margin-top: 20px;
-}
-
-.dv {
-  width: 200px;
-  height: 100px;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  white-space: normal;
-}
-
-button {
-  width: 100px;
-  height: 20px;
-  line-height: 1;
-  font-size: 12px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  border: 3px solid #7900A8;
-  background: #000000;
-  color: #ffffff;
-  border-radius: 40px;
-  cursor: pointer;
-  overflow: hidden;
-  transition: all .35s;
-}
-
-button:hover {
-  background: #000000;
-  color: #7900A8;
-}
-
-button span {
-  opacity: 1;
-  visibility: visible;
-  transition: all .35s;
-}
-
-button.is_active {
-  width: 40px;
-  height: 40px;
-}
-
-button.is_active {
-  opacity: 1;
-  visibility: visible;
-}
-
-button.is_active span {
-  opacity: 0;
+  .Bstart, .Bask {
+    height: 40px;
+    width: 2000px;
+  }
 }
