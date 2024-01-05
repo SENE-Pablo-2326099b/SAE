@@ -190,6 +190,7 @@ h2 {
   margin: 11px;
 }
 
+
 .Fhomme-femme,
 .Fnom-prenom,
 .Fmessage,
@@ -210,67 +211,47 @@ h2 {
   width: 50%;
   padding: 10px;
   box-sizing: border-box;
+
 }
 
-input[type=text],
-textarea {
- border: 2px solid #181818;
- border-radius: 14px;
- color: #ffffff;
- background-color: transparent;
- padding: 10px;
- resize: none;
-}
+  input[type=text],
+  textarea {
+  border: 2px solid #181818;
+  border-radius: 14px;
+  color: #ffffff;
+  background-color: transparent;
+  padding: 10px;
+  resize: none;
+  }
 
-
- .radio {
+.radio {
   display: inline-block;
   position: relative;
   padding: 0 6px;
   margin: 10px 0 0;
 }
 
-/* Cacher l'input radio par défaut */
-.radio input[type="radio"] {
-  display: none;
- }
- 
- /* Styliser le label associé à l'input radio */
- .radio label {
-  box-sizing: border-box;
-  display: inline-block;
-  width: 3rem;
-  height: 1.5rem;
-  border-radius: 1.5rem;
-  padding:2px;
-  background-color: #c0ceda ;
-  transition: all 0.5s ;
- }
- 
- /* Ajouter un pseudo-élément au label pour représenter l'état non coché du bouton radio */
- .radio label::before {
-  box-sizing: border-box;
-  display: block;
-  content: "";
-  height: calc(1.5rem - 4px);
-  width: calc(1.5rem - 4px);
+input[type='radio'] {
+  appearance: none;
+  border: 1px solid #181818;
+  padding: 9px;
   border-radius: 50%;
-  background-color: #fff;
-  transition: all 0.5s ;
+  display: inline-block;
+  position: relative;
  }
  
- /* Changer le style du label lorsque le bouton radio est coché */
- .radio input[type="radio"]:checked + label {
-  background-color: #00B7E8 ;
+ input[type='radio']:checked:after {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  content: '';
+  background-color: #181818;
+  transform: translate(-50%, -50%);
+  position: absolute;
  }
  
- /* Déplacer le pseudo-élément lorsque le bouton radio est coché */
- .radio input[type="radio"]:checked + label::before {
-  margin-left: 1.5rem ;
- }
- 
-
-
 .Fmessage,
 .inputmessage,
 .btn2 {
