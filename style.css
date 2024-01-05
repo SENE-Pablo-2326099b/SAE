@@ -18,7 +18,6 @@
 
 body {
   font-family: 'Geist', sans-serif;
-  /* background-color: rgb(0, 0, 0); */
   background-image: url("assets/Background/degrader.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -136,6 +135,7 @@ footer {
   width: 200px;
   background: transparent;
   border: 1px solid #181818;
+  border-radius: 15px;
 
 }
 
@@ -155,13 +155,30 @@ hr {
   margin: 10px;
 }
 
+.scrltoUp {
+  height: 50px;
+  width: 50px;
+  border-radius: 0%;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 1px;
+  bottom: 20px;
+  cursor: pointer;
+}
+
+.icon {
+  width: 40px;
+}
+
 /* Formulaire de contact bas de page */
 
 .contact {
   position: static;
   bottom: 0;
   left: 0;
-  /* background-color: #000000; */
   color: white;
   width: 100%;
 }
@@ -206,54 +223,52 @@ textarea {
 }
 
 
-.radio {
- display: inline-block;
- position: relative;
- padding: 0 6px;
- margin: 10px 0 0;
+ .radio {
+  display: inline-block;
+  position: relative;
+  padding: 0 6px;
+  margin: 10px 0 0;
 }
 
-.radio input[type='radio'] {
- display: none;
-}
-
-.radio label {
- color:   White;
- font-weight: normal;
- font-size: 15px; 
-}
-
-.radio label:before {
- content: " ";
- display: inline-block;
- position: relative;
- top: 5px;
- margin: 0 5px 0 0;
- width: 15px;
- height: 15px;
- border-radius: 11px;
- border: 2px solid #181818;
- background-color: #240023;
-}
-
-.radio input[type=radio]:checked + label:after {
- border-radius: 11px;
- width: 12px;
- height: 12px;
- position: absolute;
- top: 9px;
- left: 10px;
- content: " ";
- display: block;
- background: #707070;
-}
-
-/* Quand je survol change le background */
-.radio:hover label:before {
-  background-color: #181818;
-}
-
-
+/* Cacher l'input radio par défaut */
+.radio input[type="radio"] {
+  display: none;
+ }
+ 
+ /* Styliser le label associé à l'input radio */
+ .radio label {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 3rem;
+  height: 1.5rem;
+  border-radius: 1.5rem;
+  padding:2px;
+  background-color: #c0ceda ;
+  transition: all 0.5s ;
+ }
+ 
+ /* Ajouter un pseudo-élément au label pour représenter l'état non coché du bouton radio */
+ .radio label::before {
+  box-sizing: border-box;
+  display: block;
+  content: "";
+  height: calc(1.5rem - 4px);
+  width: calc(1.5rem - 4px);
+  border-radius: 50%;
+  background-color: #fff;
+  transition: all 0.5s ;
+ }
+ 
+ /* Changer le style du label lorsque le bouton radio est coché */
+ .radio input[type="radio"]:checked + label {
+  background-color: #00B7E8 ;
+ }
+ 
+ /* Déplacer le pseudo-élément lorsque le bouton radio est coché */
+ .radio input[type="radio"]:checked + label::before {
+  margin-left: 1.5rem ;
+ }
+ 
 
 
 .Fmessage,
@@ -283,19 +298,20 @@ button {
   border-radius: 40px;
   cursor: pointer;
   overflow: hidden;
-  transition: all .35s;
+  transition: all .0001s;
   margin: 20px;
 }
 
 button:hover {
   background: transparent;
   color: #7900A8;
+  border: 1px solid #7900A8;
 }
 
 button span {
   opacity: 1;
   visibility: visible;
-  transition: all .35s;
+  transition: all .35s; 
 }
 
 button.is_active {
@@ -341,12 +357,16 @@ button.is_active span {
     top: 0%;
     left: 0%;
     position: absolute;
-    background: linear-gradient(#7900a8,20%,#000000);
+    background-image: url("assets/Background/degrader.png");
     width: 100%;
     height: 100vh;
     margin-left: -100%;
     transition: all 0.35s;
+
   }
+  body.menu-open {
+    overflow: hidden;
+}
 
   .nav-links.mobile-menu {
     margin-left: 0;
