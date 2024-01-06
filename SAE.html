@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,8 +17,7 @@
     <title>Vanity🍆</title>
 </head>
 
-<body> 
-
+<body>
     <header>
         <!-- Navbar -->
         <nav class="navbar">
@@ -36,7 +36,7 @@
     <div class="centre">
         <span class="unlock">Unlock the full potential of your games </span>
         <span class="explication"> Vanity provides the best developer experience to reverse build create a more personalized player experience !</span>
-    </div> 
+    </div>
     <div class="btn1">
         <button class="Bstart">
             <span>Start</span>
@@ -45,17 +45,23 @@
             <span>Ask a demo</span>
         </button>
     </div>
-    <h1>Lorem ipsum</h1>         
-    <hr>
+    <h1>Lorem ipsum</h1>
+    <!-- <hr> -->
     <div class="contenu"></div>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing id? Eveniet recusandae in quam iure, quaerat aliquam vero quia eligendi sit, voluptas, ut minima velit dolore? Fugit quod saepe ex rem architecto. Asperiores nobis Perspiciatis placeat commodi cupiditate nesciunt mollitia, at in deleniti incidunt excepturi vel eum beatae necessitatibus eaque, officia quia ratione? Quae, quos veniam eos itaque ratione ullam, dolorum eius dolorem repellat architecto ipsa illo. Maxime consequuntur placeat officiis repellat. Repellat, dicta quisquam dolore in illo voluptas, nemo esse a veniam fugit aliquam consectetur odit? Labore hic facere ad, corporis earum amet explicabo perspiciatis eveniet ipsum fugit facilis eius maiores soluta est inventore id delectus sit velit vero aliquid, deserunt dolore sapiente dolor? Porro tempori$ acere tempore nemo voluptas atque sint sed, esse ratione explicabo dolorum! Iure excepturi iste harum delectus beatae nostrum adipisci commodi dolorem, expedita, quam vero maxime velit dolore possimus itaque obcaecati sapiente enim ex nemo quas pariatur dolor quis! Alias pariatur vitae laborum cupiditate eum hic itaque voluptate mollitia doloribus. Atque reprehenderit aliquid perferendis doloremque ut omnis delectus ex deleniti maxime at eos, ducimus ratione! Dignissimos repellat delectus laborum ratione molestiae deleniti blanditiis quae mollitia, fugiat eaque quasi saepe maiores tempore. Nostrum, quibusdam ipsum id eos quae assumenda mollitia aut, excepturi nam quo voluptas voluptatum repellendus numquam, sapiente explicabo dicta beatae nulla? Dolorem alias in facere commodi magnam provident assumenda? Laborum eius sequi, culpa voluptatibus est consequuntur architecto distinctio reprehenderit repellendus possimus, neque recusandae, qui cumque ut laudantium enim placeat repudiandae temporibus! Harum, saepe velit. Facere officia dignissimos, ratione optio odit incidunt ducimus non. Natus ea eveniet dolores eos voluptatum, eum tempora dicta aut explicabo excepturi. Ipsa, quaerat dignissimos minus odit quibusdam velit cumque deleniti voluptas quia molestias itaque ut cum vel voluptatem. Molestiae ea dignissimos doloribus sunt voluptate, odit temporibus eligendi ipsa itaque quibusdam nisi, et amet eaque, tempora dolorem? Dicta, voluptatibus harum! Quo quidem commodi eum ad pariatur explicabo vero deserunt magnam exercitationem itaque esse culpa iure ipsum perspiciatis rem fugit excepturi ipsa laboriosam beatae id voluptates obcaecati, perferendis fuga vel! Sed accusamus, enim totam amet ullam dignissimos omnis beatae molestiae qui esse!    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Sed semper nisi porta auctor efficitur. 
+        Etiam id aliquam ligula </p>
     <br><br>
-    <div class="separateur"><hr></div>
+    <!-- <div class="separateur"> -->
+        <!-- <hr> -->
+    <!-- </div> -->
+
+    <div class="scrltoUp">
+        <img src="assets/IconNavBar/scrolltoUp.png" alt="" class="icon">
+    </div>
     <footer>
         <div class="contact">
-
-            <form action="" method="get" class="form">
-                
+            <form action="/submit-form" method="get" class="form">
                 <h2>Nous contacter :</h2>
                 <div class="separation"></div>
                 <div class="corps-formulaire">
@@ -98,13 +104,26 @@
         </div>
     </footer>
 
-</body>
-<script>
-    const menuHamburger = document.querySelector(".menu-hamburger")
-    const navLinks = document.querySelector(".nav-links")
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+        const body = document.body;
 
-    menuHamburger.addEventListener('click',()=>{
-    navLinks.classList.toggle('mobile-menu')
-    })
-</script>
+        menuHamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile-menu')
+            body.classList.toggle('menu-open');
+        })
+
+        const scrltoUp = document.querySelector('.scrltoUp');
+
+        scrltoUp.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "smooth"
+            })
+        })
+    </script>
+</body>
+
 </html>
