@@ -46,22 +46,34 @@
         </button>
     </div>
     <h1>Lorem ipsum</h1>
-    <!-- <hr> -->
     <div class="contenu"></div>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
         Sed semper nisi porta auctor efficitur. 
         Etiam id aliquam ligula </p>
     <br><br>
-    <!-- <div class="separateur"> -->
-        <!-- <hr> -->
-    <!-- </div> -->
+    <div class="btnDefiler">
+        <div class="defiler1">1</div>
+        <div class="defiler2">2</div>
+        <div class="defiler3">3</div>
+        <div class="defiler4">4</div>
+    </div>
+    <div class="lss">
 
+
+
+
+
+
+
+
+
+    </div>
     <div class="scrltoUp">
         <img src="assets/IconNavBar/scrolltoUp.png" alt="" class="icon">
     </div>
     <footer>
         <div class="contact">
-            <form action="/submit-form" method="get" class="form">
+            <form class="form">
                 <h2>Nous contacter :</h2>
                 <div class="separation"></div>
                 <div class="corps-formulaire">
@@ -78,21 +90,21 @@
                     <div class="Fhomme-femme">
                         <div class="radio">
                             <label for="homme">Homme</label>
-                            <input type="radio" id="homme" name="sexe" value="homme">
+                            <input type="radio" class="inputradioH" id="homme" name="sexe" value="homme">
                         </div>
                         <div class="radio">
                             <label for="femme">Femme</label>
-                            <input type="radio" id="femme" name="sexe" value="femme">
+                            <input type="radio" class="inputradioF" id="femme" name="sexe" value="femme">
                         </div>
                     </div>
                     <div class="Fmessage">
                         <label for="message">Donnez vos impressions sur le site</label>
                     </div>
                     <div class="inputmessage">
-                        <textarea class="dv" id="message" name="contact" required></textarea>
+                        <textarea class="avis" id="message" name="contact" required></textarea>
                     </div>
                     <div class="btn2">
-                        <button>
+                        <button type="submit">
                             <span>Envoyer</span>
                         </button>
                     </div>
@@ -123,6 +135,13 @@
                 behavior: "smooth"
             })
         })
+
+        const changeDiv = document.querySelector('.btnDefiler');
+
+        btnDefiler.addEventListener('click', () => {
+
+        })
+        
     </script>
 </body>
 

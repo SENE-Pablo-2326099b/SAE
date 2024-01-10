@@ -8,18 +8,21 @@
   /* Fonts et police d'écriture */
   @font-face {
     font-family: "Geist";
-    src: url(/SAE/assets/Fonts/Geist/Geist/Geist-Black.otf) format('woff2');
+    /* src: url(/SAE/assets/Fonts/Geist/Geist/Geist-Black.woff2) format('woff2'); */
+    src: url(/SAE/assets/Fonts/Geist/Geist/Geist-Thin.woff2) format('woff2');
+
   }
 
-  @font-face {
+  /* @font-face {
     font-family: "Geist-mono";
-    src: url(/SAE/assets/Fonts/Geist.Mono/Geist.Mono/GeistMono-Black.otf) format('woff2');
-  }
+     src: url(/SAE/assets/Fonts/Geist.Mono/Geist.Mono/GeistMono-Black.woff2) format('woff2'); 
+  }  */
 
   body {
     font-family: 'Geist', sans-serif;
     background-image: url("assets/Background/degrader.png");
     background-repeat: no-repeat;
+    /* background-color: #0F0F0F; */
     background-size: cover;
     color: white;
     display: flex;
@@ -27,7 +30,7 @@
     min-height: 100vh;
     margin: 15px;
     margin-top: 0px;
-    text-align: center  ;
+    text-align: center;
   }
 
   header {
@@ -77,7 +80,7 @@
     width: 35px;
   }
 
-  .separateur {
+  .hr {
     height: 20px;
   }
 
@@ -175,6 +178,26 @@
     width: 40px;
   }
 
+  .btnDefiler {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .defiler1,
+  .defiler2,
+  .defiler3,
+  .defiler4 {
+    margin: 40px;
+  }
+
+  
+
+  .lss {
+    margin: 400px;
+  }
+
   /* Formulaire de contact bas de page */
 
   .contact {
@@ -228,7 +251,6 @@
 
   .radio {
     display: inline-block;
-    position: relative;
     padding: 0 6px;
     margin: 10px 0 0;
   }
@@ -260,7 +282,7 @@
     margin-top: 20px;
   }
 
-  .dv {
+  .avis {
     width: 200px;
     height: 100px;
     word-wrap: break-word;
