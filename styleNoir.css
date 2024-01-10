@@ -7,11 +7,20 @@
 
   /* Fonts et police d'écriture */
   @font-face {
-    font-family: "Geist";
-    /* src: url(/SAE/assets/Fonts/Geist/Geist/Geist-Black.woff2) format('woff2'); */
-    src: url(/SAE/assets/Fonts/Geist/Geist/Geist-Thin.woff2) format('woff2');
-
+    font-family: "Geist-UltraLight";
+    src: url(/SAE/assets/Fonts/Geist/Geist/Geist-UltraLight.woff2) format('woff2');
   }
+
+  @font-face {
+    font-family: "Geist-Light";
+    src: url(/SAE/assets/Fonts/Geist/Geist/Geist-Light.woff2) format('woff2');    
+  }
+
+  @font-face {
+    font-family: "Geist-Thin";
+    src: url(/SAE/assets/Fonts/Geist/Geist/Geist-Thin.woff2) format('woff2');    
+  }
+
 
   /* @font-face {
     font-family: "Geist-mono";
@@ -19,7 +28,7 @@
   }  */
 
   body {
-    font-family: 'Geist', sans-serif;
+    font-family: 'Geist-Thin', sans-serif;
     background-image: url("assets/Background/degrader.png");
     background-repeat: no-repeat;
     /* background-color: #0F0F0F; */
@@ -98,6 +107,7 @@
 
 
   .unlock {
+    font-family: 'Geist-Light';
     border: none;
     box-shadow: none;
     text-transform: inherit;
@@ -190,12 +200,15 @@
   .defiler3,
   .defiler4 {
     margin: 40px;
+    
   }
 
   
 
   .lss {
-    margin: 400px;
+    margin: 10vh;
+    border: solid;
+    border-color: red;
   }
 
   /* Formulaire de contact bas de page */
@@ -208,7 +221,7 @@
     width: 100%;
   }
 
-  h2 {
+  h3 {
     text-align: center;
     color: white;
     font-size: 15px;
@@ -291,6 +304,7 @@
   }
 
   button {
+    font-family: 'Geist-Thin';
     width: 100px;
     height: 20px;
     line-height: 1;
