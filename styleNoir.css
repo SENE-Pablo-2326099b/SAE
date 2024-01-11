@@ -29,7 +29,7 @@
 
 body {
   font-family: 'Geist-Thin', sans-serif;
-  background-image: url("assets/Background/degrader.png");
+  background-image: url("assets/Background/fondnoir.png");
   background-repeat: no-repeat;
   background-color: #0F0F0F;
   background-size: cover;
@@ -195,6 +195,31 @@ hr {
   flex-direction: row;
 }
 
+.defilerCod,
+.defilerRev,
+.defilerDes,
+.defilerPik {
+  margin: 60px;  
+}
+
+.defilerCod {
+  height: 160px;
+}
+
+.defilerRev {
+  height: 150px;
+}
+
+
+.defilerDes {
+  height: 100px;
+}
+
+.defilerPik {
+  height: 100px;
+}
+
+
 
 .defiler {
   margin: 40px;  
@@ -353,14 +378,13 @@ button.is_active span {
   transform: translate(-50%, -50%);
   width: 600px;
   height: 600px;
-  background-color: #000000;
+  background-color: #ffffff;
 }
 
 #popup-content{ 
   display: none;
   width: 100%;
   height: 100%;
-  position: absolute;
   background-color: #00000079;
 }
 
@@ -400,7 +424,7 @@ left: 75%;
     top: 0%;
     left: 0%;
     position: absolute;
-    background-image: url("assets/Background/degrader.png");
+    background-image: url("assets/Background/fondnoir.png");
     width: 100%;
     height: 100vh;
     margin-left: -100%;
@@ -448,4 +472,27 @@ left: 75%;
     margin: 4px;  
   }
 
+  .defilerCod,
+  .defilerRev,
+  .defilerDes,
+  .defilerPik {
+    margin: 10px;  
+  }
+  
+  .defilerCod {
+    height: 70px;
+  }
+  
+  .defilerRev {
+    height: 90px;
+  }
+  
+  
+  .defilerDes {
+    height: 60px;
+  }
+  
+  .defilerPik {
+    height: 60px;
+  }
 }

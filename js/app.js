@@ -41,3 +41,8 @@ function myFunction() {
         content.style.display = "block";
     }
 }
+
+//changer de style
+
+
+// ... document.styleSheets[0].href = "dossier/styleblanc.css"; 

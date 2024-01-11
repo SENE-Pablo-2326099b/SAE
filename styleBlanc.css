@@ -29,11 +29,10 @@
 
 body {
   font-family: 'Geist-Thin', sans-serif;
-  background-image: url("assets/Background/degrader.png");
+  background-image: url("assets/Background/fondblanc.png");
   background-repeat: no-repeat;
-  background-color: #0F0F0F;
   background-size: cover;
-  color: white;
+  color: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -45,13 +44,21 @@ body {
 header {
   height: 10vh;
   font-size: 15px;
-  background-color: #0F0F0F;
+  background-color: #e2d5e3;
   margin: -15px;
 }
 
 
 footer {
   margin-top: auto;
+}
+
+span {
+  color: rgb(0, 0, 0);
+}
+
+p {
+  color: rgb(0, 0, 0);
 }
 
 .navbar {
@@ -65,7 +72,7 @@ footer {
 }
 
 .navbar a {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .navbar .logo {
@@ -115,9 +122,9 @@ footer {
   max-width: 24.4rem;
   text-align: center;
   font-size: 2.2rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.2175;
-  color: #ffffff;
+  color: #000000;
 }
 
 
@@ -131,7 +138,7 @@ footer {
   font-size: 1.6rem;
   font-weight: lighter;
   line-height: 1.2175;
-  color: #ffffff;
+  color: #000000;
 }
 
 .btn1 {
@@ -148,22 +155,24 @@ footer {
   height: 40px;
   width: 200px;
   background: transparent;
-  border: 1px solid #181818;
+  border: 1px solid #ffffff;
   border-radius: 15px;
   font-size: 17px;
+  color: rgb(0, 0, 0);
 
 }
 
 h1 {
   font-size: 2.2rem;
+  font-weight: lighter;
   text-align: center;
-  color: white;
+  color: rgb(0, 0, 0);
   margin: 10px;
 }
 
 
 hr {
-  background-color: #262626;
+  background-color: #000000;
 }
 
 .contenu{
@@ -195,9 +204,28 @@ hr {
   flex-direction: row;
 }
 
+.defilerCod,
+.defilerRev,
+.defilerDes,
+.defilerPik {
+  margin: 60px;  
+}
 
-.defiler {
-  margin: 40px;  
+.defilerCod {
+  height: 160px;
+}
+
+.defilerRev {
+  height: 150px;
+}
+
+
+.defilerDes {
+  height: 130px;
+}
+
+.defilerPik {
+  height: 120px;
 }
 
 img.defiler {
@@ -206,8 +234,8 @@ img.defiler {
 
 .lss {
   margin: 10vh;
-  border: solid;
-  border-color: red;
+  /* border: solid; */
+  /* border-color: red; */
 }
 
 /* Formulaire de contact bas de page */
@@ -216,13 +244,13 @@ img.defiler {
   position: static;
   bottom: 0;
   left: 0;
-  color: white;
+  color: rgb(0, 0, 0);
   width: 100%;
 }
 
 h3 {
   text-align: center;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 15px;
   margin: 11px;
 }
@@ -253,9 +281,9 @@ h3 {
 
   input[type=text],
   textarea {
-  border: 2px solid #181818;
+  border: 2px solid #ffffff;
   border-radius: 14px;
-  color: #ffffff;
+  color: #000000;
   background-color: transparent;
   padding: 10px;
   resize: none;
@@ -269,7 +297,7 @@ h3 {
 
 input[type='radio'] {
   appearance: none;
-  border: 1px solid #181818;
+  border: 1px solid #ffffff;
   padding: 9px;
   border-radius: 50%;
   display: inline-block;
@@ -283,7 +311,7 @@ input[type='radio']:checked:after {
   top: 50%;
   left: 50%;
   content: '';
-  background-color: #181818;
+  background-color: #ffffff;
   transform: translate(-50%, -50%);
   position: absolute;
 }
@@ -310,9 +338,9 @@ button {
   font-size: 12px;
   font-weight: bold;
   letter-spacing: 1px;
-  border: 1px solid #181818;
+  border: 1px solid #ffffff;
   background: transparent;
-  color: #ffffff;
+  color: #000000;
   border-radius: 40px;
   cursor: pointer;
   overflow: hidden;
@@ -360,8 +388,7 @@ button.is_active span {
   display: none;
   width: 100%;
   height: 100%;
-  position: absolute;
-  background-color: #00000079;
+  background-color: #ffffff79;
 }
 
 #btn-fermer{
@@ -400,7 +427,7 @@ left: 75%;
     top: 0%;
     left: 0%;
     position: absolute;
-    background-image: url("assets/Background/degrader.png");
+    background-image: url("assets/Background/fondblanc.png");
     width: 100%;
     height: 100vh;
     margin-left: -100%;
@@ -430,7 +457,7 @@ left: 75%;
 
   .navbar .logo {
     position: absolute;
-    font-size: 2em;
+    font-size: 3em;
     font-weight: bold;
   }
 
@@ -447,5 +474,30 @@ left: 75%;
   .defiler {
     margin: 4px;  
   }
+
+  .defilerCod,
+  .defilerRev,
+  .defilerDes,
+  .defilerPik {
+    margin: 10px;  
+  }
+  
+  .defilerCod {
+    height: 70px;
+  }
+  
+  .defilerRev {
+    height: 90px;
+  }
+  
+  
+  .defilerDes {
+    height: 60px;
+  }
+  
+  .defilerPik {
+    height: 60px;
+  }
+  
 
 }
