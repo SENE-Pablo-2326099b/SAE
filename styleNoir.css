@@ -1,417 +1,466 @@
-  * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
 
-  /* Fonts et police d'écriture */
-  @font-face {
-    font-family: "Geist-UltraLight";
-    src: url(/SAE/assets/Fonts/Geist/Geist/Geist-UltraLight.woff2) format('woff2');
-  }
+/* Fonts et police d'écriture */
+@font-face {
+  font-family: "Geist-UltraLight";
+  src: url(/SAE/assets/Fonts/Geist/Geist/Geist-UltraLight.woff2) format('woff2');
+}
 
-  @font-face {
-    font-family: "Geist-Light";
-    src: url(/SAE/assets/Fonts/Geist/Geist/Geist-Light.woff2) format('woff2');    
-  }
+@font-face {
+  font-family: "Geist-Light";
+  src: url(/SAE/assets/Fonts/Geist/Geist/Geist-Light.woff2) format('woff2');    
+}
 
-  @font-face {
-    font-family: "Geist-Thin";
-    src: url(/SAE/assets/Fonts/Geist/Geist/Geist-Thin.woff2) format('woff2');    
-  }
+@font-face {
+  font-family: "Geist-Thin";
+  src: url(/SAE/assets/Fonts/Geist/Geist/Geist-Thin.woff2) format('woff2');    
+}
 
 
-  /* @font-face {
-    font-family: "Geist-mono";
-     src: url(/SAE/assets/Fonts/Geist.Mono/Geist.Mono/GeistMono-Black.woff2) format('woff2'); 
-  }  */
+/* @font-face {
+  font-family: "Geist-mono";
+   src: url(/SAE/assets/Fonts/Geist.Mono/Geist.Mono/GeistMono-Black.woff2) format('woff2'); 
+}  */
 
-  body {
-    font-family: 'Geist-Thin', sans-serif;
-    background-image: url("assets/Background/degrader.png");
-    background-repeat: no-repeat;
-    /* background-color: #0F0F0F; */
-    background-size: cover;
-    color: white;
+body {
+  font-family: 'Geist-Thin', sans-serif;
+  background-image: url("assets/Background/degrader.png");
+  background-repeat: no-repeat;
+  background-color: #0F0F0F;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 15px;
+  margin-top: 0px;
+  text-align: center;
+}
+
+header {
+  height: 10vh;
+  font-size: 15px;
+  background-color: #0F0F0F;
+  margin: -15px;
+}
+
+
+footer {
+  margin-top: auto;
+}
+
+.navbar {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: #7900A8;
+}
+
+.navbar a {
+  color: white;
+}
+
+.navbar .logo {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.navbar .nav-links ul {
+  display: flex;
+}
+
+.navbar .nav-links ul li {
+  margin: 0 20px;
+}
+
+.navbar .menu-hamburger {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  width: 35px;
+}
+
+.hr {
+  height: 20px;
+}
+
+
+.centre {
+  border: none;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  box-shadow: none;
+} 
+
+
+.unlock {
+  font-family: 'Geist-Light';
+  border: none;
+  box-shadow: none;
+  text-transform: inherit;
+  margin: 2rem;
+  max-width: 24.4rem;
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.2175;
+  color: #ffffff;
+}
+
+
+.explication {
+  border: none;
+  box-shadow: none;
+  margin-left: 0.1rem;
+  margin-bottom: 1rem;
+  max-width: 30.8rem;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: lighter;
+  line-height: 1.2175;
+  color: #ffffff;
+}
+
+.btn1 {
+    height: 4rem;
+    left: 5rem;
+    top: 3.5rem;
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 15px;
-    margin-top: 0px;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.Bstart, .Bask {
+  height: 40px;
+  width: 200px;
+  background: transparent;
+  border: 1px solid #181818;
+  border-radius: 15px;
+  font-size: 17px;
+
+}
+
+h1 {
+  font-size: 2.2rem;
+  text-align: center;
+  color: white;
+  margin: 10px;
+}
+
+
+hr {
+  background-color: #262626;
+}
+
+.contenu{
+  margin: 10px;
+}
+
+.scrltoUp {
+  height: 50px;
+  width: 50px;
+  border-radius: 0%;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 1px;
+  bottom: 20px;
+  cursor: pointer;
+}
+
+.icon {
+  width: 40px;
+}
+
+.btnDefiler {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.defiler1,
+.defiler2,
+.defiler3,
+.defiler4 {
+  margin: 40px;
+  
+}
+
+
+
+.lss {
+  margin: 10vh;
+  border: solid;
+  border-color: red;
+}
+
+/* Formulaire de contact bas de page */
+
+.contact {
+  position: static;
+  bottom: 0;
+  left: 0;
+  color: white;
+  width: 100%;
+}
+
+h3 {
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  margin: 11px;
+}
+
+
+.Fhomme-femme,
+.Fnom-prenom,
+.Fmessage,
+.inputmessage,
+.btn2 {
+  text-align: center;
+}
+
+.Fnom-prenom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.Fnom-prenom input {
+  /* height: 40px; */
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+
+}
+
+  input[type=text],
+  textarea {
+  border: 2px solid #181818;
+  border-radius: 14px;
+  color: #ffffff;
+  background-color: transparent;
+  padding: 10px;
+  resize: none;
   }
 
-  header {
-    height: 10vh;
-    font-size: 15px;
-    background-color: #0F0F0F;
-    margin: -15px;
-  }
+.radio {
+  display: inline-block;
+  padding: 0 6px;
+  margin: 10px 0 0;
+}
+
+input[type='radio'] {
+  appearance: none;
+  border: 1px solid #181818;
+  padding: 9px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+
+input[type='radio']:checked:after {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  content: '';
+  background-color: #181818;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.Fmessage,
+.inputmessage,
+.btn2 {
+  margin-top: 20px;
+}
+
+.avis {
+  width: 200px;
+  height: 100px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+button {
+  font-family: 'Geist-Thin';
+  width: 100px;
+  height: 20px;
+  line-height: 1;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: 1px solid #181818;
+  background: transparent;
+  color: #ffffff;
+  border-radius: 40px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all .0001s;
+  margin: 20px;
+}
+
+button:hover {
+  background: transparent;
+  color: #7900A8;
+  border: 1px solid #7900A8;
+}
+
+button span {
+  opacity: 1;
+  visibility: visible;
+  transition: all .35s; 
+}
+
+button.is_active {
+  width: 40px;
+  height: 40px;
+}
+
+button.is_active {
+  opacity: 1;
+  visibility: visible;
+}
+
+button.is_active span {
+  opacity: 0;
+}
+
+#popup-overlay{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  background-color: #fff;
+}
+
+#popup-content{ 
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #00000079;
+}
+
+#btn-fermer{
+position: absolute;
+top: 0%;
+left: 75%;
+}
 
 
-  footer {
-    margin-top: auto;
+
+/* Medias quieries */
+
+@media screen and (max-width: 900px) {
+
+  .logo {
+    z-index: 4;
+    margin-top: 65px;
+    margin-left: 25px;
   }
 
   .navbar {
-    padding: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    box-sizing: border-box;
-    border-bottom: #7900A8;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    padding: 0%;
   }
 
-  .navbar a {
-    color: white;
+  .navbar .menu-hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    background-image: url("assets/Background/degrader.png");
+    width: 100%;
+    height: 100vh;
+    margin-left: -100%;
+    transition: all 0.35s;
+
+  }
+  body.menu-open {
+    overflow: hidden;
+}
+
+  .nav-links.mobile-menu {
+    margin-left: 0;
+  }
+
+  .nav-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  .navbar .nav-links ul li {
+    margin: 20px 0;
+    font-size: 1.2em;
   }
 
   .navbar .logo {
+    position: absolute;
     font-size: 2em;
     font-weight: bold;
   }
 
-  .navbar .nav-links ul {
-    display: flex;
-  }
-
-  .navbar .nav-links ul li {
-    margin: 0 20px;
-  }
-
-  .navbar .menu-hamburger {
-    display: none;
-    position: absolute;
-    top: 20px;
-    right: 35px;
-    width: 35px;
-  }
-
-  .hr {
-    height: 20px;
-  }
-
-
-  .centre {
-    border: none;
-    box-shadow: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    box-shadow: none;
-  } 
-
-
-  .unlock {
-    font-family: 'Geist-Light';
-    border: none;
-    box-shadow: none;
-    text-transform: inherit;
-    margin: 2rem;
-    max-width: 24.4rem;
-    text-align: center;
-    font-size: 2.2rem;
-    font-weight: 700;
-    line-height: 1.2175;
-    color: #ffffff;
-  }
-
-
-  .explication {
-    border: none;
-    box-shadow: none;
-    margin-left: 0.1rem;
-    margin-bottom: 1rem;
-    max-width: 30.8rem;
-    text-align: center;
-    font-size: 1.6rem;
-    font-weight: lighter;
-    line-height: 1.2175;
-    color: #ffffff;
-  }
-
-  .btn1 {
-      height: 4rem;
-      left: 5rem;
-      top: 3.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      
-  }
-
   .Bstart, .Bask {
     height: 40px;
-    width: 200px;
-    background: transparent;
-    border: 1px solid #181818;
-    border-radius: 15px;
-    font-size: 17px;
-
+    width: 2000px;
   }
+}
 
-  h1 {
-    font-size: 2.2rem;
-    text-align: center;
-    color: white;
-    margin: 10px;
-  }
+#popup-overlay{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  background-color: #fff;
+}
 
-  
-  hr {
-    background-color: #262626;
-  }
+#popup-content{ 
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #00000079;
+}
 
-  .contenu{
-    margin: 10px;
-  }
-
-  .scrltoUp {
-    height: 50px;
-    width: 50px;
-    border-radius: 0%;
-    background: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    right: 1px;
-    bottom: 20px;
-    cursor: pointer;
-  }
-
-  .icon {
-    width: 40px;
-  }
-
-  .btnDefiler {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-  }
-
-  .defiler1,
-  .defiler2,
-  .defiler3,
-  .defiler4 {
-    margin: 40px;
-    
-  }
-
-  
-
-  .lss {
-    margin: 10vh;
-    border: solid;
-    border-color: red;
-  }
-
-  /* Formulaire de contact bas de page */
-
-  .contact {
-    position: static;
-    bottom: 0;
-    left: 0;
-    color: white;
-    width: 100%;
-  }
-
-  h3 {
-    text-align: center;
-    color: white;
-    font-size: 15px;
-    margin: 11px;
-  }
-
-
-  .Fhomme-femme,
-  .Fnom-prenom,
-  .Fmessage,
-  .inputmessage,
-  .btn2 {
-    text-align: center;
-  }
-
-  .Fnom-prenom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-
-  .Fnom-prenom input {
-    /* height: 40px; */
-    width: 50%;
-    padding: 10px;
-    box-sizing: border-box;
-
-  }
-
-    input[type=text],
-    textarea {
-    border: 2px solid #181818;
-    border-radius: 14px;
-    color: #ffffff;
-    background-color: transparent;
-    padding: 10px;
-    resize: none;
-    }
-
-  .radio {
-    display: inline-block;
-    padding: 0 6px;
-    margin: 10px 0 0;
-  }
-
-  input[type='radio'] {
-    appearance: none;
-    border: 1px solid #181818;
-    padding: 9px;
-    border-radius: 50%;
-    display: inline-block;
-    position: relative;
-  }
-  
-  input[type='radio']:checked:after {
-    width: 17px;
-    height: 17px;
-    border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    content: '';
-    background-color: #181818;
-    transform: translate(-50%, -50%);
-    position: absolute;
-  }
-  
-  .Fmessage,
-  .inputmessage,
-  .btn2 {
-    margin-top: 20px;
-  }
-
-  .avis {
-    width: 200px;
-    height: 100px;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    white-space: normal;
-  }
-
-  button {
-    font-family: 'Geist-Thin';
-    width: 100px;
-    height: 20px;
-    line-height: 1;
-    font-size: 12px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    border: 1px solid #181818;
-    background: transparent;
-    color: #ffffff;
-    border-radius: 40px;
-    cursor: pointer;
-    overflow: hidden;
-    transition: all .0001s;
-    margin: 20px;
-  }
-
-  button:hover {
-    background: transparent;
-    color: #7900A8;
-    border: 1px solid #7900A8;
-  }
-
-  button span {
-    opacity: 1;
-    visibility: visible;
-    transition: all .35s; 
-  }
-
-  button.is_active {
-    width: 40px;
-    height: 40px;
-  }
-
-  button.is_active {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  button.is_active span {
-    opacity: 0;
-  }
-
-
-  /* Medias quieries */
-
-  @media screen and (max-width: 900px) {
-
-    .logo {
-      z-index: 4;
-      margin-top: 65px;
-      margin-left: 25px;
-    }
-
-    .navbar {
-      position: absolute;
-      top: 0%;
-      left: 0%;
-      padding: 0%;
-    }
-
-    .navbar .menu-hamburger {
-      display: block;
-    }
-
-    .nav-links {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      top: 0%;
-      left: 0%;
-      position: absolute;
-      background-image: url("assets/Background/degrader.png");
-      width: 100%;
-      height: 100vh;
-      margin-left: -100%;
-      transition: all 0.35s;
-
-    }
-    body.menu-open {
-      overflow: hidden;
-  }
-
-    .nav-links.mobile-menu {
-      margin-left: 0;
-    }
-
-    .nav-links ul {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 15px;
-    }
-
-    .navbar .nav-links ul li {
-      margin: 20px 0;
-      font-size: 1.2em;
-    }
-
-    .navbar .logo {
-      position: absolute;
-      font-size: 2em;
-      font-weight: bold;
-    }
-
-    .Bstart, .Bask {
-      height: 40px;
-      width: 2000px;
-    }
-  }
+#btn-fermer{
+position: absolute;
+top: 0%;
+left: 75%;
+}
