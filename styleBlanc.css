@@ -1,5 +1,4 @@
 * {
-  margin: 0;
   padding: 0;
   text-decoration: none;
   list-style: none;
@@ -10,7 +9,7 @@
   font-family: "Geist-UltraLight";
   src: url(/SAE/assets/Fonts/Geist/Geist/Geist-UltraLight.woff2) format('woff2');
 }
-
+ 
 @font-face {
   font-family: "Geist-Light";
   src: url(/SAE/assets/Fonts/Geist/Geist/Geist-Light.woff2) format('woff2');    
@@ -403,6 +402,10 @@ button.is_active span {
   border-radius: 14px;
   color: #000000;
   background-color: transparent;
+}
+
+.Bfermer {
+  width: 50px;
 }
 
 .aDelta {
