@@ -382,6 +382,7 @@ button.is_active span {
   transform: translate(-50%, -50%);
   width: 600px;
   height: 600px;
+  border-radius: 14px;
   background-color: #000000;
 }
 
@@ -394,14 +395,12 @@ button.is_active span {
 
 #btn-fermer{
   position: absolute;
-  top: 0%;
+  top: -2%;
   left: 75%;
-}
-
-#btn-fermer{
-position: absolute;
-top: 0%;
-left: 75%;
+  border: 2px solid #ffffff;
+  border-radius: 14px;
+  color: #ffffff;
+  background-color: transparent;
 }
 
 .aDelta {
@@ -516,7 +515,19 @@ left: 75%;
     transform: translate(-50%, -50%);
     width: 370px;
     height: 400px;
+    border-radius: 14px;
     background-color: #ffffff;
   }
-  
+ 
+  #btn-fermer{
+    display: flex;
+    position: absolute;
+    top: -2%;
+    left: 65%;
+    border: 2px solid #ffffff;
+    border-radius: 14px;
+    color: #ffffff;
+    background-color: transparent;
+    justify-content: center;
+  }
 }
