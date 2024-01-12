@@ -40,7 +40,7 @@
         </div>
         <div class="btn1">
             <button class="Bstart">
-                <span>Start</span>
+                <span> <a href="page2.html"> Start</a> </span>
             </button>
             <button class="Bask" id="btn">
                 <span>Ask a demo</span>
@@ -48,7 +48,49 @@
         </div>
         <div id="popup-content">
             <div id="popup-overlay">
-                <p>coucou</p>
+                <footer>
+                    <section>
+                        <div class="contact">
+                            <form class="form">
+                                <h3>Nous contacter :</h3>
+                                <div class="separation"></div>
+                                <div class="corps-formulaire">
+                                    <div class="Fnom-prenom">
+                                        <div class="FboiteN">
+                                            <label class="nom">Nom</label>
+                                            <input class="inputnom" type="text" required>
+                                        </div>
+                                        <div class="FboiteP">
+                                            <label class="prenom">Prénom</label>
+                                            <input class="inputprenom" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="Fhomme-femme">
+                                        <div class="radio">
+                                            <label for="homme">Homme</label>
+                                            <input type="radio" class="inputradioH" id="homme" name="sexe" value="homme">
+                                        </div>
+                                        <div class="radio">
+                                            <label for="femme">Femme</label>
+                                            <input type="radio" class="inputradioF" id="femme" name="sexe" value="femme">
+                                        </div>
+                                    </div>
+                                    <div class="Fmessage">
+                                        <label for="message">Donnez vos impressions sur le site</label>
+                                    </div>
+                                    <div class="inputmessage">
+                                        <textarea class="avis" id="message" name="contact" required></textarea>
+                                    </div>
+                                    <div class="btn2">
+                                        <button type="submit">
+                                            <span>Envoyer</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+                </footer>
                 <button class="Bfermer" id="btn-fermer">Close</button>
             </div>
         </div> 
@@ -86,45 +128,6 @@
     </div>
     <footer>
         <section>
-            <div class="contact">
-                <form class="form">
-                    <h3>Nous contacter :</h3>
-                    <div class="separation"></div>
-                    <div class="corps-formulaire">
-                        <div class="Fnom-prenom">
-                            <div class="FboiteN">
-                                <label class="nom">Nom</label>
-                                <input class="inputnom" type="text" required>
-                            </div>
-                            <div class="FboiteP">
-                                <label class="prenom">Prénom</label>
-                                <input class="inputprenom" type="text">
-                            </div>
-                        </div>
-                        <div class="Fhomme-femme">
-                            <div class="radio">
-                                <label for="homme">Homme</label>
-                                <input type="radio" class="inputradioH" id="homme" name="sexe" value="homme">
-                            </div>
-                            <div class="radio">
-                                <label for="femme">Femme</label>
-                                <input type="radio" class="inputradioF" id="femme" name="sexe" value="femme">
-                            </div>
-                        </div>
-                        <div class="Fmessage">
-                            <label for="message">Donnez vos impressions sur le site</label>
-                        </div>
-                        <div class="inputmessage">
-                            <textarea class="avis" id="message" name="contact" required></textarea>
-                        </div>
-                        <div class="btn2">
-                            <button type="submit">
-                                <span>Envoyer</span>
-                            </button>
-                        </div>
-                    </div>
-                </form>
-            </div>
             <div>
                 <span>Nous nous sommes inspiré du site de<a href="https://delta.app/en"> Delta</a> pour faire notre mise en page !</span>
             </div>
