@@ -54,6 +54,10 @@ footer {
   margin-top: auto;
 }
 
+a {
+  color: white;
+}
+
 .navbar {
   padding: 30px;
   display: flex;
@@ -378,15 +382,20 @@ button.is_active span {
   transform: translate(-50%, -50%);
   width: 600px;
   height: 600px;
-  background-color: #ff0000;
-} 
+  background-color: #000000;
+}
 
 #popup-content{ 
   display: none;
   width: 100%;
   height: 100%;
+  background-color: #ffffff46;
+}
+
+#btn-fermer{
   position: absolute;
-  background-color: #ffffffab;
+  top: 0%;
+  left: 75%;
 }
 
 #btn-fermer{
@@ -395,7 +404,9 @@ top: 0%;
 left: 75%;
 }
 
-
+.aDelta {
+  color: #ffffff;
+}
 
 /* Medias quieries */
 
@@ -496,4 +507,16 @@ left: 75%;
   .defilerPik {
     height: 60px;
   }
+
+  #popup-overlay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 370px;
+    height: 400px;
+    background-color: #ffffff;
+  }
+  
 }
