@@ -1,4 +1,5 @@
 * {
+  margin: 0;
   padding: 0;
   text-decoration: none;
   list-style: none;
@@ -7,17 +8,17 @@
 /* Fonts et police d'écriture */
 @font-face {
   font-family: "Geist-UltraLight";
-  src: url(/SAE/assets/Fonts/Geist/Geist/Geist-UltraLight.woff2) format('woff2');
-}
- 
-@font-face {
-  font-family: "Geist-Light";
-  src: url(/SAE/assets/Fonts/Geist/Geist/Geist-Light.woff2) format('woff2');    
+  src: url(assets/Fonts/Geist/Geist/Geist-UltraLight.woff2) format('woff2');
 }
 
 @font-face {
+  font-family: "Geist-Light";
+  src: url(assets/Fonts/Geist/Geist/Geist-Light.woff2) format('woff2');    
+}
+ 
+@font-face {
   font-family: "Geist-Thin";
-  src: url(/SAE/assets/Fonts/Geist/Geist/Geist-Thin.woff2) format('woff2');    
+  src: url(assets/Fonts/Geist/Geist/Geist-Thin.woff2) format('woff2');    
 }
 
 
@@ -404,8 +405,14 @@ button.is_active span {
   background-color: transparent;
 }
 
-.Bfermer {
-  width: 50px;
+.defilerCod, .defilerRev, .defilerDes, .defilerPik {
+  width: 84px;
+  height: 84px;
+  user-select: none;
+}
+
+.defilerCod:hover, .defilerRev:hover, .defilerDes:hover, .defilerPik:hover {
+  cursor: pointer;
 }
 
 .aDelta {
@@ -510,6 +517,8 @@ button.is_active span {
   .defilerPik {
     height: 60px;
   }
+
+  
   
   #popup-overlay{
     display: flex;
