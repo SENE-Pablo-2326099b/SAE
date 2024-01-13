@@ -42,7 +42,7 @@ function myFunction() {
     }
 }
 
-//changer de style
+// changement de contenu
 
 let contents = {
     "defilerCod": {
@@ -85,5 +85,32 @@ for (let button_name of buttons) {
     });
 }
 
+
+// changement de style
+
+let white_button = document.getElementById("white");
+let dark_button = document.getElementById("dark");
+
+function addStyleSheet(url) {
+    let link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = url;
+    document.getElementsByTagName('HEAD')[0].appendChild(link);
+ }
+
+white_button.addEventListener("click", function(e){
+    let href = document.styleSheets[0].href;
+    // changement de style
+    let new_href = href.slice(0, href.lastIndexOf('/')+1) + "styleBlanc.css";
+    addStyleSheet(new_href);
+})
+
+dark_button.addEventListener("click", function(e){
+    let href = document.styleSheets[0].href;
+    // changement de style
+    let new_href = href.slice(0, href.lastIndexOf('/')+1) + "styleNoir.css";
+    addStyleSheet(new_href);
+})
 
 // ... document.styleSheets[0].href = "dossier/styleblanc.css"; 
