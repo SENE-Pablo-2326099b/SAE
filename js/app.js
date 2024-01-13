@@ -44,5 +44,46 @@ function myFunction() {
 
 //changer de style
 
+let contents = {
+    "defilerCod": {
+        "h_change": "Adapt your mod to your needs",
+        "p_change": "You can add your own custom functions, create and imagine your own vision of the game.",
+        "h_change2": "Built for simplicity",
+        "p_change2": "With our Lua Scripting API, you can create your own mod in a few lines of code."
+    },
+    "defilerRev": {
+        "h_change": "Explore the game functions in depth",
+        "p_change": "Pick up the game's functions and learn how to use them to create your own mod.",
+        "h_change2": "Built for simplicity",
+        "p_change2": "With our personnalized Reverse Engineering API, you can explore the game's functions in depth. You can also use what you discover from the game's code in your own mod."
+    },
+    "defilerDes": {
+        "h_change": "Create your own UI",
+        "p_change": "Create your own UI and add it to the game.",
+        "h_change2": "Built for simplicity",
+        "p_change2": "With our UI API, you can create your own UI in a few lines of code."
+    },
+    "defilerPik": {
+        "h_change": "Pick from already existing mods, games and UIs",
+        "p_change": "You can pick from already existing mods, games and UIs and add them to your mod. or you can create your own.",
+        "h_change2": "Built for simplicity",
+        "p_change2": "With our marketplace, you decide what's best for you."
+    }
+};
+
+let buttons = ["defilerCod", "defilerRev", "defilerDes", "defilerPik"];
+
+for (let button_name of buttons) {
+    let button = document.getElementsByClassName(button_name)[0];
+    let current_selected = document.getElementById("current_selected");
+    button.addEventListener("click", function(e) {
+
+        current_selected.id = "";
+        button.id = "current_selected";
+        document.getElementById("h_change").innerHTML = contents[button_name]["h_change"];
+        document.getElementById("p_change").innerHTML = contents[button_name]["p_change"];
+    });
+}
+
 
 // ... document.styleSheets[0].href = "dossier/styleblanc.css"; 
